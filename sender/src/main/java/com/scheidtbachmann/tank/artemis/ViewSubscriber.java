@@ -35,9 +35,11 @@ import javax.jms.MessageListener;
 
 @MessageDriven(name = "MessageConsiumer", activationConfig = {
     @ActivationConfigProperty(propertyName = "connectionFactoryLookup", propertyValue = "java:/jms/remoteCF"),
-    @ActivationConfigProperty(propertyName="user", propertyValue="user"),
-    @ActivationConfigProperty(propertyName="password", propertyValue="password"),
-    @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "java:global/remoteContext/ViewSQMMessages"),
+//    @ActivationConfigProperty(propertyName="user", propertyValue="sqm-api"),
+//    @ActivationConfigProperty(propertyName="password", propertyValue="api"),
+    @ActivationConfigProperty(propertyName="user", propertyValue="marek"),
+    @ActivationConfigProperty(propertyName="password", propertyValue="marek"),
+    @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "ViewSQMMessages"),
     @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
     @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge") })
 
