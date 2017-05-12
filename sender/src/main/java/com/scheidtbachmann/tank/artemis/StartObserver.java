@@ -21,7 +21,7 @@ public class StartObserver {
 
 
   public void start(@Observes @Initialized(ApplicationScoped.class) ServletContext payload) {
-//    scheduler.start();
+    scheduler.start();
   }
 
   public void stop(@Observes @Destroyed(ApplicationScoped.class) ServletContext payload) {
